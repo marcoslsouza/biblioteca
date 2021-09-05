@@ -1,13 +1,7 @@
 dist: xenial
 language: java
-sudo: true
+sudo: false
 jdk: oraclejdk11
-addons:
-  apt:
-    packages:
-      - oracle-java11-installer
-before_install:
-  - chmod +x mvnw
 cache:
   diretories:
     - $HOME/.m2
