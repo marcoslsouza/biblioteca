@@ -1,8 +1,13 @@
-dist: focal
+dist: xenial
 language: java
 sudo: true
 jdk: oraclejdk11
-install: true
+addons:
+  apt:
+    packages:
+      - oracle-java11-installer
+before_install:
+  - chmod +x mvnw
 cache:
   diretories:
     - $HOME/.m2
