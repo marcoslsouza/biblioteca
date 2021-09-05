@@ -1,10 +1,10 @@
-dist: xenial
 language: java
-sudo: false
+sudo: true
+dist: trusty
 jdk: oraclejdk11
-install:
-  - mvn -N io.takari:maven:wrapper
-  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-cache:
-  diretories:
-    - $HOME/.m2
+addons:
+  apt:
+    packages:
+      - oracle-java11-installer
+before_install:
+  - chmod +x mvnw
