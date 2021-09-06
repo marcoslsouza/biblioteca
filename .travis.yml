@@ -1,8 +1,9 @@
 dist: xenial
 language: java
 sudo: false
-jdk: openjdk14
-install: true
+jdk: oraclejdk11
+before_install:
+  - chmod +x mvnw
 addons:
   sonarcloud:
     organization: $SONAR_ORGANIZATION
@@ -10,6 +11,6 @@ addons:
 script:
   - mvn clean package sonar:sonar -P sonar
 cache:
-  directories:
+  diretories:
     - $HOME/.m2
     - $HOME/.sonar/cache
