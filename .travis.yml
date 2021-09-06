@@ -4,10 +4,13 @@ sudo: false
 jdk: oraclejdk11
 before_install:
   - chmod +x mvnw
+install: true
 addons:
   sonarcloud:
-    organization: "SONAR_ORGANIZATION"
-    token: "8400962d7a05f6b25dcbf90ff2561870238673fb"
+    organization: $SONAR_ORGANIZATION
+    token: $SONAR_TOKEN
+script:
+  - mvn clean package sonar:sonar -P sonar
 cache:
   diretories:
     - $HOME/.m2
