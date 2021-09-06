@@ -6,8 +6,8 @@ before_install:
   - chmod +x mvnw
 addons:
   sonarcloud:
-    organization: $SONAR_ORGANIZATION
-    token: $SONAR_TOKEN
+    organization: SONAR_ORGANIZATION
+    token: 8400962d7a05f6b25dcbf90ff2561870238673fb
 script:
   - mvn clean package sonar:sonar -P sonar
 cache:
