@@ -8,8 +8,6 @@ addons:
   sonarcloud:
     organization: "SONAR_ORGANIZATION"
     token: "8400962d7a05f6b25dcbf90ff2561870238673fb"
-script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=marcoslsouza_biblioteca
 cache:
   diretories:
     - $HOME/.m2
