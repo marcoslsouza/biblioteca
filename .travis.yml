@@ -11,7 +11,7 @@ addons:
     token:
       secure: "**************************"
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=marcoslsouza_biblioteca
+  - mvn clean package sonar:sonar -P sonar
 cache:
   diretories:
     - $HOME/.m2
