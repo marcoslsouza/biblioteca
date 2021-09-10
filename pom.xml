@@ -22,6 +22,7 @@
   		
   		<sonar.sources>./src</sonar.sources>
     	<sonar.tests>./src</sonar.tests>
+    	<sonar.log.level>DEBUG</sonar.log.level>
 	</properties>
 	<dependencies>
 		<dependency>
