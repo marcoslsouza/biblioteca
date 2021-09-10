@@ -20,7 +20,7 @@
 		<sonar.organization>marcoslsouza</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
   		
-  		 <jacoco.skip>${skipTests}</jacoco.skip>
+  		<jacoco.skip>${skipTests}</jacoco.skip>
 	</properties>
 	<dependencies>
 		<dependency>
