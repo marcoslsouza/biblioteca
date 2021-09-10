@@ -19,6 +19,9 @@
 		<!-- Sonar -->
 		<sonar.organization>marcoslsouza</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  		
+  		<sonar.sources>./src</sonar.sources>
+    	<sonar.tests>./src</sonar.tests>
 	</properties>
 	<dependencies>
 		<dependency>
