@@ -21,7 +21,7 @@ import lombok.Setter;
 
 // Toda vez que é inserida uma data será salvada uma auditoria
 @EntityListeners(AuditingEntityListener.class)
-public abstract class Auditable {
+public abstract class Auditoria {
 
 	@CreatedDate
 	@Column(name = "DATA_CRIACAO", nullable = false)
