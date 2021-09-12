@@ -13,14 +13,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.github.marcoslsouza.biblioteca.entity.Auditable;
 import com.github.marcoslsouza.biblioteca.livros.entity.Livros;
 import com.github.marcoslsouza.biblioteca.usuario.enums.Genero;
 
-import lombok.Data;
+import lombok.ToString;
 
-@Data
+@ToString
 @Entity
-public class Usuario {
+public class Usuario extends Auditable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
