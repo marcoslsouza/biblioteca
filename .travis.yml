@@ -9,6 +9,9 @@ addons:
   sonarcloud:
     organization: $SONAR_ORGANIZATION
     token: $SONAR_TOKEN
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=marcoslsouza_biblioteca
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 after_success:
   - mvn clean test jacoco:report coveralls:jacoco
 cache:
