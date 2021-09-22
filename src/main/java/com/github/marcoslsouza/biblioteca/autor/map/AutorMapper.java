@@ -7,10 +7,10 @@ import com.github.marcoslsouza.biblioteca.autor.dto.AutorDTO;
 import com.github.marcoslsouza.biblioteca.autor.entity.Autor;
 
 @Mapper
-public interface AutorMapper { //NOSONAR
+public interface AutorMapper { 
 
 	// Como nao sera um objeto do Spring, criaremos uma constante para ser acessada pelas outras classes do projeto.
-	AutorMapper INSTANCE = Mappers.getMapper(AutorMapper.class);
+	AutorMapper INSTANCE = Mappers.getMapper(AutorMapper.class); //NOSONAR
 	
 	Autor toModel(AutorDTO autorDTO);
 	
