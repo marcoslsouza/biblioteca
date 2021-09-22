@@ -9,12 +9,14 @@ import com.github.marcoslsouza.biblioteca.autor.repository.AutorRepositorio;
 @Service
 public class AutorService {
 
+	//NOSONAR
 	// AutorMapper nao esta sendo gerenciado pelo spring, entao precisa instanciar
-	private final static AutorMapper AUTOR_MAPPER = AutorMapper.INSTANCE; //NOSONAR
+	private final static AutorMapper AUTOR_MAPPER = AutorMapper.INSTANCE;
 	
+	 //NOSONAR
 	// Para facilitar os testes unitarios, o AutorRepositorio sera injetado no construtor, e assim teremos uma instancia
 	// da classe AutorRepositorio aqui em AutorService.
-	private AutorRepositorio autorRepositorio; //NOSONAR
+	private AutorRepositorio autorRepositorio;
 
 	@Autowired
 	public AutorService(AutorRepositorio autorRepositorio) {

@@ -10,7 +10,8 @@ import com.github.marcoslsouza.biblioteca.autor.service.AutorService;
 @RequestMapping("/api/v1/autores")
 public class AutorController implements AutorControllerDocs {
 
-	private AutorService autorService; //NOSONAR
+	//NOSONAR
+	private AutorService autorService;
 
 	@Autowired
 	public AutorController(AutorService autorService) {
