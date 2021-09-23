@@ -11,11 +11,13 @@ public class AutorService {
 
 	//NOSONAR
 	// AutorMapper nao esta sendo gerenciado pelo spring, entao precisa instanciar
+	@SuppressWarnings("unused")
 	private final static AutorMapper AUTOR_MAPPER = AutorMapper.INSTANCE;
 	
 	 //NOSONAR
 	// Para facilitar os testes unitarios, o AutorRepositorio sera injetado no construtor, e assim teremos uma instancia
 	// da classe AutorRepositorio aqui em AutorService.
+	@SuppressWarnings("unused")
 	private AutorRepositorio autorRepositorio;
 
 	@Autowired
