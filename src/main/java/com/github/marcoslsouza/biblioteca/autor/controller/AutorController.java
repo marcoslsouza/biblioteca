@@ -12,7 +12,6 @@ public class AutorController implements AutorControllerDocs {
 
 	private AutorService autorService;
 
-	@SuppressWarnings("all")
 	@Autowired
 	public AutorController(AutorService autorService) {
 		this.autorService = autorService;

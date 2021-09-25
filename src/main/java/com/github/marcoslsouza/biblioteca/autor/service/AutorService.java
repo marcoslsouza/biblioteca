@@ -8,7 +8,6 @@ import com.github.marcoslsouza.biblioteca.autor.repository.AutorRepositorio;
 @Service
 public class AutorService {
 
-	@SuppressWarnings("all")
 	// AutorMapper nao esta sendo gerenciado pelo spring, entao precisa instanciar
 	private final static AutorMapper AUTOR_MAPPER = AutorMapper.INSTANCE;
 	
@@ -16,7 +15,6 @@ public class AutorService {
 	// da classe AutorRepositorio aqui em AutorService.
 	private AutorRepositorio autorRepositorio;
 
-	@SuppressWarnings("all")
 	public AutorService(AutorRepositorio autorRepositorio) {
 		
 		this.autorRepositorio = autorRepositorio;
