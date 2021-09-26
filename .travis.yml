@@ -15,5 +15,5 @@ after_success:
   - mvn clean test jacoco:report coveralls:jacoco
 cache:
   diretories:
-    - $HOME/.m2
-    - $HOME/.sonar/cache
+   - $HOME/.m2
+   - $HOME/.sonar/cache
